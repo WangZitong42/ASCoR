@@ -8,8 +8,8 @@
   "data": {
     "train_images": "LoveDA/Train/Urban/images_png",
     "train_labels": "LoveDA/Train/Urban/masks_png",
-    "target_images": "openearthmap_crossearth384_loveda7_pngview/img_dir/val",
-    "target_labels": "openearthmap_crossearth384_loveda7_pngview/ann_dir/val"
+    "target_images": "OpenEarthMap/img_dir/val",
+    "target_labels": "OpenEarthMap/ann_dir/val"
   },
   "fusion": {
     "epochs": 3,

@@ -55,7 +55,7 @@ data/
     potsdam_rgb/{img_dir,ann_dir}/{train,val}/
     vaihingen_irrg_cross_344/{img_dir,ann_dir}/train/
     vaihingen_irrg_cross_398/{img_dir,ann_dir}/val/
-  openearthmap_crossearth384_loveda7_pngview/
+  OpenEarthMap/
     img_dir/val/
     ann_dir/val/
 ```
