@@ -1,0 +1,18 @@
+--- a/sam3/model/sam3_image_processor.py
++++ b/sam3/model/sam3_image_processor.py
+@@ -188,6 +188,15 @@
+             find_target=None,
+         )
+ 
++        state["semantic_mask_logits"] = next(
++            (outputs[key] for key in (
++                "semantic_mask_logits", "semantic_logits", "semantic_masks",
++                "sem_seg_logits", "semantic_mask", "semantic_seg",
++                "pred_semantic_masks", "pred_semantic_logits",
++            ) if key in outputs),
++            None,
++        )
++
+         out_bbox = outputs["pred_boxes"]
+         out_logits = outputs["pred_logits"]
+         out_masks = outputs["pred_masks"]
